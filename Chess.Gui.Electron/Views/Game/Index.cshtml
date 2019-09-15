@@ -1,0 +1,26 @@
+@model GameStartModel
+
+@{
+    ViewData["Title"] = @localizationService.GetResource("game.title");
+}
+
+@using(Html.BeginForm("StartGame", "Game", FormMethod.Get)) 
+{
+    <div class="form-group">
+        @Html.LabelFor(x => x.StartColor, localizationService.GetResource("game.color"))
+        @Html.DropDownListFor(x => x.StartColor, Model.Colors, new { @class= "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.SelectedLevel, localizationService.GetResource("game.level"))
+        @Html.DropDownListFor(x => x.SelectedLevel, Model.Levels, new { @class= "form-control" })
+    </div>
+    <div class="form-check">
+        @Html.CheckBoxFor(x => x.SetDepth, new { @class= "form-check-input" })
+        @Html.LabelFor(x => x.SetDepth, localizationService.GetResource("game.setdepth"), new { @class= "form-check-label" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.Depth, localizationService.GetResource("game.depth"))
+        @Html.EditorFor(x => x.Depth, new { htmlAttributes = new { @class= "form-control" } })
+    </div>
+    <input class="btn btn-primary" type="submit" value="@localizationService.GetResource("game.start")"/>
+}

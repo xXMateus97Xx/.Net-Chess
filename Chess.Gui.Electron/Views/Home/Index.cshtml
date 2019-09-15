@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = @localizationService.GetResource("homepage.title");
+}
+
+<div class="text-center">
+    <table>
+        <tr>
+            <td>
+                <button class="menu-button btn btn-primary" data-href="@Url.Action("Index", "Game")">
+                    @localizationService.GetResource("newgame.button")
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="menu-button btn btn-primary" data-href="@Url.Action("Index", "Settings")">
+                    @localizationService.GetResource("settings.button")
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="exit-button" class="menu-button btn btn-secondary">
+                    @localizationService.GetResource("exit.button")
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+
+    (function(){
+        const { ipcRenderer } = require("electron");
+
+        document.getElementById("exit-button").addEventListener("click", () => {
+            ipcRenderer.send("exit-app", "true");
+            window.close();
+        });
+
+        let buttons = document.getElementsByClassName("menu-button");
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", (e) => {
+                let url = e.target.getAttribute("data-href");
+                window.location.href = url;
+            });
+        }
+
+    }())
+</script>

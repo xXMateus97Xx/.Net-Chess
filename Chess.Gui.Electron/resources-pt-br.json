@@ -1,0 +1,77 @@
+{
+    "Language": "pt-br",
+    "Default": false,
+    "Resources": [{
+            "Key": "homepage.title",
+            "Value": ".NET Chess"
+        },
+        {
+            "Key": "newgame.button",
+            "Value": "Novo Jogo"
+        },
+        {
+            "Key": "settings.button",
+            "Value": "Configurações"
+        },
+        {
+            "Key": "exit.button",
+            "Value": "Sair"
+        },
+        {
+            "Key": "colors.random",
+            "Value": "Aleatório"
+        },
+        {
+            "Key": "colors.white",
+            "Value": "Brancas"
+        },
+        {
+            "Key": "colors.black",
+            "Value": "Pretas"
+        },
+        {
+            "Key": "settings.title",
+            "Value": "Configurações"
+        },
+        {
+            "Key": "settings.language",
+            "Value": "Idiomas"
+        },
+        {
+            "Key": "settings.threads",
+            "Value": "Threads usadas pela IA"
+        },
+        {
+            "Key": "settings.EnginePath",
+            "Value": "Caminho para a Engine UCI"
+        },
+        {
+            "Key": "settings.save",
+            "Value": "Salvar Configurações"
+        },
+        {
+            "Key": "game.color",
+            "Value": "Selecione a sua cor"
+        },
+        {
+            "Key": "game.level",
+            "Value": "Selecione o nível do jogo"
+        },
+        {
+            "Key": "game.title",
+            "Value": "Configure o seu jogo"
+        },
+        {
+            "Key": "game.setdepth",
+            "Value": "Configure a profundidade de busca da IA manualmente"
+        },
+        {
+            "Key": "game.depth",
+            "Value": "Profundidade de busca"
+        },
+        {
+            "Key": "game.start",
+            "Value": "Começar jogo"
+        }
+    ]
+}

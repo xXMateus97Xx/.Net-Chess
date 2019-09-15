@@ -1,0 +1,77 @@
+{
+    "Language": "en-us",
+    "Default": true,
+    "Resources": [{
+            "Key": "homepage.title",
+            "Value": ".NET Chess"
+        },
+        {
+            "Key": "newgame.button",
+            "Value": "New Game"
+        },
+        {
+            "Key": "settings.button",
+            "Value": "Settings"
+        },
+        {
+            "Key": "exit.button",
+            "Value": "Exit"
+        },
+        {
+            "Key": "colors.random",
+            "Value": "Random"
+        },
+        {
+            "Key": "colors.white",
+            "Value": "White"
+        },
+        {
+            "Key": "colors.black",
+            "Value": "Black"
+        },
+        {
+            "Key": "settings.title",
+            "Value": "Settings"
+        },
+        {
+            "Key": "settings.language",
+            "Value": "Language"
+        },
+        {
+            "Key": "settings.threads",
+            "Value": "Threads used by UCI Engine"
+        },
+        {
+            "Key": "settings.EnginePath",
+            "Value": "UCI Engine Path"
+        },
+        {
+            "Key": "settings.save",
+            "Value": "Save Settings"
+        },
+        {
+            "Key": "game.color",
+            "Value": "Select your color"
+        },
+        {
+            "Key": "game.level",
+            "Value": "Select game level"
+        },
+        {
+            "Key": "game.title",
+            "Value": "Configure Your Game"
+        },
+        {
+            "Key": "game.setdepth",
+            "Value": "Set AI Depth manually"
+        },
+        {
+            "Key": "game.depth",
+            "Value": "AI Depth"
+        },
+        {
+            "Key": "game.start",
+            "Value": "Start Game"
+        }
+    ]
+}
